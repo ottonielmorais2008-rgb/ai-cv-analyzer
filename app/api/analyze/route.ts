@@ -5,10 +5,10 @@ import { analysisSchema, MAX_CV_CHARS, MAX_JOB_CHARS } from "../../schema";
 export const maxDuration = 30;
 
 // Default: a cheap, fast model through the Vercel AI Gateway (auth via OIDC on Vercel).
-// Optional fallback: if GOOGLE_GENERATIVE_AI_API_KEY is set, call Gemini directly (free tier).
+// If GOOGLE_GENERATIVE_AI_API_KEY is set, it is preferred: Gemini is called directly (free tier).
 const useGoogleDirect = Boolean(process.env.GOOGLE_GENERATIVE_AI_API_KEY);
 const MODEL_ID = useGoogleDirect
-  ? process.env.GOOGLE_MODEL ?? "gemini-2.5-flash-lite"
+  ? process.env.GOOGLE_MODEL ?? "gemini-3.5-flash-lite"
   : process.env.AI_GATEWAY_MODEL ?? "google/gemini-3.1-flash-lite";
 const model: LanguageModel = useGoogleDirect ? google(MODEL_ID) : MODEL_ID;
 

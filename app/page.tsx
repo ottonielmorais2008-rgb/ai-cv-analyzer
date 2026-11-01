@@ -91,7 +91,7 @@ export default function Home() {
       )}
 
       <footer className="mt-12 text-center text-xs text-slate-500">
-        Built with Next.js, the AI SDK and the Vercel AI Gateway. Texts are not stored.{" "}
+        Built with Next.js, the AI SDK and the Gemini API. Texts are not stored.{" "}
         <a className="underline" href="https://github.com/ottonielmorais2008-rgb/ai-cv-analyzer">Source code</a>
       </footer>
     </main>
