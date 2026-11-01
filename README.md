@@ -28,7 +28,7 @@ flowchart LR
 - [Next.js](https://nextjs.org) (App Router) + TypeScript
 - [Tailwind CSS](https://tailwindcss.com)
 - [AI SDK](https://ai-sdk.dev) (`generateText` with `Output.object`) + [Zod](https://zod.dev)
-- [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) with the `google/gemini-3.1-flash-lite` model
+- [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) with the `google/gemini-3.1-flash-lite` model, or the Gemini API directly via `@ai-sdk/google`
 - Deployed on [Vercel](https://vercel.com) (deploys on every push to `main`)
 
 ## API
@@ -48,6 +48,8 @@ flowchart LR
 ## Running it yourself
 
 Requires Node.js 22+. Run `npm install` and `npm run dev`. Outside Vercel, set `AI_GATEWAY_API_KEY` in `.env.local` (never commit it). The model can be changed with `AI_GATEWAY_MODEL`.
+
+Alternative without the AI Gateway: set `GOOGLE_GENERATIVE_AI_API_KEY` (a free Gemini API key) and the route calls Gemini directly (`gemini-2.5-flash-lite` by default, change it with `GOOGLE_MODEL`).
 
 ## License
 
