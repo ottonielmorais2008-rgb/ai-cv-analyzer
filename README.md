@@ -2,7 +2,7 @@
 
 Paste a CV and a job description, and an LLM returns a **match score (0-100)**, the **matched skills**, the **missing skills** and **3-5 concrete suggestions** to improve the fit.
 
-**Live demo:** LIVE_URL
+**Live demo:** https://ai-cv-analyzer.vercel.app
 
 ## Features
 
