@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "eval": "tsx evals/run.mts",
+    "eval:report": "tsx evals/report.mts",
+    "eval:rescore": "tsx evals/rescore.mts"
   },
   "license": "MIT",
   "dependencies": {
@@ -22,6 +27,7 @@
     "@types/react": "^19.3.0",
     "postcss": "^8.5.32",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
   "private": true,

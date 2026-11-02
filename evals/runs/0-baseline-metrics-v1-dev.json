@@ -1,0 +1,155 @@
+{
+  "label": "0-baseline-metrics-v1",
+  "split": "dev",
+  "model": "gemini-3.5-flash-lite",
+  "date": "2026-11-02T11:19:09.100Z",
+  "summary": {
+    "cases": 14,
+    "schemaValid": 100,
+    "scoreInRange": 100,
+    "missingRecall": 100,
+    "casesWithFalseGaps": 0
+  },
+  "results": [
+    {
+      "id": "dev-01-strong-frontend",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 0,
+      "missingTotal": 0,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-02-backend-gaps",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 4,
+      "missingTotal": 4,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-03-poor-fit",
+      "schemaValid": true,
+      "score": 0,
+      "scoreInRange": true,
+      "missingFound": 4,
+      "missingTotal": 4,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-04-synonyms",
+      "schemaValid": true,
+      "score": 75,
+      "scoreInRange": true,
+      "missingFound": 1,
+      "missingTotal": 1,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-05-data-analyst",
+      "schemaValid": true,
+      "score": 55,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-06-injection",
+      "schemaValid": true,
+      "score": 15,
+      "scoreInRange": true,
+      "missingFound": 5,
+      "missingTotal": 5,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-07-devops",
+      "schemaValid": true,
+      "score": 60,
+      "scoreInRange": true,
+      "missingFound": 4,
+      "missingTotal": 4,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-08-mobile",
+      "schemaValid": true,
+      "score": 25,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-09-security",
+      "schemaValid": true,
+      "score": 75,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-10-learning-only",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-11-web3",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-12-ml-engineer",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 1,
+      "missingTotal": 1,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-13-networking",
+      "schemaValid": true,
+      "score": 70,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": []
+    },
+    {
+      "id": "dev-14-qa",
+      "schemaValid": true,
+      "score": 25,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": []
+    }
+  ]
+}

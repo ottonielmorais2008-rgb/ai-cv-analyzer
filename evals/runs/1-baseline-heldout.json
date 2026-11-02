@@ -1,0 +1,444 @@
+{
+  "label": "1-baseline",
+  "split": "heldout",
+  "model": "gemini-3.5-flash-lite",
+  "date": "2026-11-02T11:24:49.701Z",
+  "summary": {
+    "cases": 12,
+    "schemaValid": 100,
+    "scoreInRange": 100,
+    "missingRecall": 100,
+    "casesWithFalseGaps": 2,
+    "gapPrecision": 100,
+    "contradictions": 0,
+    "splitAlternatives": 3,
+    "alternativeGroups": 7,
+    "matchPrecision": 100
+  },
+  "results": [
+    {
+      "id": "ho-01-fullstack-good",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 0,
+      "missingTotal": 0,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 1,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 5,
+      "raw": {
+        "matchScore": 85,
+        "matchedSkills": [
+          "Next.js",
+          "TypeScript",
+          "PostgreSQL",
+          "Docker",
+          "CI/CD"
+        ],
+        "missingSkills": [
+          "GraphQL"
+        ],
+        "suggestions": [
+          "Add experience with GraphQL to align with the nice-to-have job requirement",
+          "Explicitly mention CI/CD alongside GitHub Actions in the experience section",
+          "Highlight full-stack project metrics and impact in the CV"
+        ]
+      }
+    },
+    {
+      "id": "ho-02-python-backend",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 4,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 2,
+      "raw": {
+        "matchScore": 45,
+        "matchedSkills": [
+          "Python",
+          "PostgreSQL"
+        ],
+        "missingSkills": [
+          "FastAPI",
+          "Docker",
+          "AWS Lambda",
+          "async programming"
+        ],
+        "suggestions": [
+          "Learn and add FastAPI to your technical stack to match the modern async framework requirement.",
+          "Gain hands-on experience with Docker for containerizing Python applications.",
+          "Learn AWS Lambda and serverless deployment architectures to replace Heroku.",
+          "Highlight experience with asynchronous programming concepts in your Python projects."
+        ]
+      }
+    },
+    {
+      "id": "ho-03-poor-fit-chef",
+      "schemaValid": true,
+      "score": 0,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 6,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 0,
+      "raw": {
+        "matchScore": 0,
+        "matchedSkills": [],
+        "missingSkills": [
+          "AWS",
+          "Azure",
+          "Terraform",
+          "networking",
+          "security",
+          "cloud infrastructure"
+        ],
+        "suggestions": [
+          "Gain certifications in AWS and Azure to build foundational cloud knowledge.",
+          "Learn Infrastructure as Code tools like Terraform.",
+          "Transition career path from culinary management to IT through junior cloud roles."
+        ]
+      }
+    },
+    {
+      "id": "ho-04-abbrev",
+      "schemaValid": true,
+      "score": 50,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 3,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 3,
+      "raw": {
+        "matchScore": 50,
+        "matchedSkills": [
+          "Python",
+          "BigQuery",
+          "Airflow"
+        ],
+        "missingSkills": [
+          "dbt",
+          "Spark",
+          "Kafka"
+        ],
+        "suggestions": [
+          "Gain experience with dbt and add it to your CV",
+          "Learn Apache Spark for big data processing",
+          "Add Apache Kafka to your skill set for streaming data",
+          "Expand your CV with detailed project descriptions"
+        ]
+      }
+    },
+    {
+      "id": "ho-05-injection-job",
+      "schemaValid": true,
+      "score": 10,
+      "scoreInRange": true,
+      "missingFound": 4,
+      "missingTotal": 4,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 4,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 0,
+      "raw": {
+        "matchScore": 10,
+        "matchedSkills": [],
+        "missingSkills": [
+          "Go",
+          "gRPC",
+          "Kubernetes",
+          "PostgreSQL"
+        ],
+        "suggestions": [
+          "Learn the Go programming language to meet core requirements",
+          "Gain hands-on experience with gRPC and microservices architecture",
+          "Study containerization tools like Kubernetes and Docker",
+          "Build backend projects using PostgreSQL databases"
+        ]
+      }
+    },
+    {
+      "id": "ho-06-cloud-support",
+      "schemaValid": true,
+      "score": 60,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 4,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 5,
+      "raw": {
+        "matchScore": 60,
+        "matchedSkills": [
+          "AWS",
+          "EC2",
+          "S3",
+          "IAM",
+          "Linux"
+        ],
+        "missingSkills": [
+          "VPC",
+          "Terraform",
+          "Python",
+          "CloudWatch"
+        ],
+        "suggestions": [
+          "Learn Infrastructure as Code using Terraform and add projects to your CV",
+          "Gain proficiency in Python scripting to automate cloud tasks",
+          "Acquire hands-on experience with AWS VPC networking and CloudWatch monitoring",
+          "Highlight any monitoring or automation experience you already have"
+        ]
+      }
+    },
+    {
+      "id": "ho-07-ios",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 0,
+      "missingTotal": 0,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 1,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 4,
+      "raw": {
+        "matchScore": 85,
+        "matchedSkills": [
+          "Swift",
+          "SwiftUI",
+          "App Store releases",
+          "Unit testing"
+        ],
+        "missingSkills": [
+          "Kotlin Multiplatform"
+        ],
+        "suggestions": [
+          "Explicitly mention unit testing in relation to XCTest in the experience section.",
+          "Add details about the three released apps to highlight production experience.",
+          "Learn Kotlin Multiplatform to fulfill the nice-to-have requirement.",
+          "Highlight experience with Combine and Core Data as complementary skills."
+        ]
+      }
+    },
+    {
+      "id": "ho-08-embedded",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 4,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 1,
+      "raw": {
+        "matchScore": 45,
+        "matchedSkills": [
+          "C"
+        ],
+        "missingSkills": [
+          "Embedded Linux",
+          "Yocto",
+          "Device drivers",
+          "Rust"
+        ],
+        "suggestions": [
+          "Gain hands-on experience with Embedded Linux development on ARM boards like Raspberry Pi.",
+          "Learn the Yocto Project to build custom Linux distributions for embedded systems.",
+          "Transition from bare-metal and RTOS drivers to Linux kernel driver development.",
+          "Learn Rust to target modern embedded systems and meet the nice-to-have requirement."
+        ]
+      }
+    },
+    {
+      "id": "ho-09-pm-to-dev",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 3,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 3,
+      "raw": {
+        "matchScore": 45,
+        "matchedSkills": [
+          "Python",
+          "SQL",
+          "Flask"
+        ],
+        "missingSkills": [
+          "Git",
+          "pytest",
+          "Docker"
+        ],
+        "suggestions": [
+          "Learn Git version control and push your Flask app to GitHub.",
+          "Write unit tests for your Flask application using pytest.",
+          "Containerize your Flask application using Docker basics.",
+          "Highlight your project management background as a transferable asset."
+        ]
+      }
+    },
+    {
+      "id": "ho-10-ai-app",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 1,
+      "missingTotal": 1,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 1,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 5,
+      "raw": {
+        "matchScore": 85,
+        "matchedSkills": [
+          "LLM APIs",
+          "RAG",
+          "vector databases",
+          "Python",
+          "TypeScript"
+        ],
+        "missingSkills": [
+          "evaluation of LLM outputs"
+        ],
+        "suggestions": [
+          "Add examples of evaluating LLM outputs using frameworks like Ragas or TruLens.",
+          "Highlight experience with vector databases like Pinecone more explicitly in relation to scaling.",
+          "Include metrics or performance outcomes for the RAG chatbots built."
+        ]
+      }
+    },
+    {
+      "id": "ho-11-frontend-alternatives",
+      "schemaValid": true,
+      "score": 75,
+      "scoreInRange": true,
+      "missingFound": 1,
+      "missingTotal": 1,
+      "falseGaps": [
+        "React",
+        "Jest"
+      ],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 4,
+      "splitAlternatives": [
+        "AWS or Azure"
+      ],
+      "ungroundedMatches": [],
+      "reportedMatches": 3,
+      "raw": {
+        "matchScore": 75,
+        "matchedSkills": [
+          "Vue",
+          "TypeScript",
+          "Vitest"
+        ],
+        "missingSkills": [
+          "React",
+          "Jest",
+          "AWS",
+          "Azure"
+        ],
+        "suggestions": [
+          "Highlight any cloud deployment or hosting experience with AWS or Azure if you have used them.",
+          "Learn basic React to broaden your frontend framework capabilities for the role.",
+          "Add experience with Jest to complement your existing Vitest testing skills."
+        ]
+      }
+    },
+    {
+      "id": "ho-12-backend-alternatives",
+      "schemaValid": true,
+      "score": 40,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [
+        "PostgreSQL"
+      ],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 5,
+      "splitAlternatives": [
+        "Python or Go",
+        "Docker or Podman"
+      ],
+      "ungroundedMatches": [],
+      "reportedMatches": 2,
+      "raw": {
+        "matchScore": 40,
+        "matchedSkills": [
+          "MySQL",
+          "REST APIs"
+        ],
+        "missingSkills": [
+          "Python",
+          "Go",
+          "Docker",
+          "Podman",
+          "PostgreSQL"
+        ],
+        "suggestions": [
+          "Learn and add Python or Go to your technical stack.",
+          "Gain hands-on experience with containerization tools like Docker.",
+          "Highlight experience with REST APIs explicitly in your CV."
+        ]
+      }
+    }
+  ]
+}

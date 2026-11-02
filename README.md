@@ -45,9 +45,34 @@ flowchart LR
 }
 ```
 
+## Evaluation
+
+The analysis is checked with a small offline-labelled eval suite in [`evals/`](evals/): 26 synthetic CV + job pairs, split into a **dev set (14)** used to find and fix problems and a **held-out set (12)** used only to check the fix.
+
+**Method.** Each case has labels: an expected score range, the skills that must be reported as missing, skills the CV already has (must not be reported as missing) and "A or B" requirement groups. `npm run eval -- dev` (or `heldout`) calls the same `analyzeCv` function the API uses and scores every output for valid schema, score in range, missing-skill recall, false gaps, split OR groups and grounding (reported skills must appear in the job text). Raw outputs are saved in [`evals/runs/`](evals/runs/), and `npm run eval:report` builds [`evals/results.md`](evals/results.md).
+
+**Measured failure.** On the dev baseline the model split "either/or" requirements into separate gaps: for *"Flutter or React Native, Dart or TypeScript"* it listed all four as missing, and for *"SIEM (Splunk or Sentinel)"* it reported Sentinel as missing although the CV has Splunk. 3 of 4 OR groups were split and 1 case had a false gap. The held-out baseline showed the same problem (3 of 7 OR groups split, 2 cases with false gaps).
+
+**Fix.** One prompt change in [`lib/analyze.ts`](lib/analyze.ts): alternatives are treated as one requirement. If the candidate has any option it counts as matched, otherwise the requirement is listed once as "A or B".
+
+**Results** (`gemini-3.5-flash-lite`, one run per configuration):
+
+| Metric | Dev before | Dev after | Held-out before | Held-out after |
+|---|---|---|---|---|
+| Valid schema | 100% | 100% | 100% | 100% |
+| Score in labelled range | 100% | 100% | 100% | 100% |
+| Missing-skill recall | 100% | 100% | 100% | 100% |
+| Split OR groups | 3/4 | 0/4 | 3/7 | 0/7 |
+| Cases with false gaps | 1/14 | 0/14 | 2/12 | 0/12 |
+| Match precision | 97.6% | 97.6% | 100% | 100% |
+
+Limitations: the dataset is small and synthetic, each configuration ran once, and the held-out OR cases were written after the failure was found (but before any held-out run). Full per-case numbers are in [`evals/results.md`](evals/results.md).
+
+CI ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) runs the type check, offline tests (schema, input limits and the eval scorer with mock model responses) and the build, with no API key.
+
 ## Running it yourself
 
-Requires Node.js 22+. Run `npm install` and `npm run dev`. Outside Vercel, set `AI_GATEWAY_API_KEY` in `.env.local` (never commit it). The model can be changed with `AI_GATEWAY_MODEL`.
+Requires Node.js 22+. Run `npm install` and `npm run dev`. `npm test` runs the offline checks; `npm run eval -- dev` needs a model key. Outside Vercel, set `AI_GATEWAY_API_KEY` in `.env.local` (never commit it). The model can be changed with `AI_GATEWAY_MODEL`.
 
 Alternative without the AI Gateway: set `GOOGLE_GENERATIVE_AI_API_KEY` (a free Gemini API key) and the route calls Gemini directly (`gemini-3.5-flash-lite` by default, change it with `GOOGLE_MODEL`).
 

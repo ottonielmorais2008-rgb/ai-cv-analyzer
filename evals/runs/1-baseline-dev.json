@@ -1,0 +1,520 @@
+{
+  "label": "1-baseline",
+  "split": "dev",
+  "model": "gemini-3.5-flash-lite",
+  "date": "2026-11-02T11:23:29.982Z",
+  "summary": {
+    "cases": 14,
+    "schemaValid": 100,
+    "scoreInRange": 100,
+    "missingRecall": 100,
+    "casesWithFalseGaps": 1,
+    "gapPrecision": 100,
+    "contradictions": 0,
+    "splitAlternatives": 3,
+    "alternativeGroups": 4,
+    "matchPrecision": 97.6
+  },
+  "results": [
+    {
+      "id": "dev-01-strong-frontend",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 0,
+      "missingTotal": 0,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 1,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 6,
+      "raw": {
+        "matchScore": 85,
+        "matchedSkills": [
+          "React",
+          "TypeScript",
+          "CSS",
+          "Tailwind CSS",
+          "Jest",
+          "Git"
+        ],
+        "missingSkills": [
+          "Next.js"
+        ],
+        "suggestions": [
+          "Add experience with Next.js to cover the nice-to-have requirement.",
+          "Highlight specific CSS architectural patterns used alongside Tailwind.",
+          "Quantify dashboard performance improvements achieved using React and TypeScript."
+        ]
+      }
+    },
+    {
+      "id": "dev-02-backend-gaps",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 4,
+      "missingTotal": 4,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 5,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 2,
+      "raw": {
+        "matchScore": 45,
+        "matchedSkills": [
+          "Node.js",
+          "REST APIs"
+        ],
+        "missingSkills": [
+          "TypeScript",
+          "PostgreSQL",
+          "Docker",
+          "Redis",
+          "AWS"
+        ],
+        "suggestions": [
+          "Rewrite your todo app in TypeScript to demonstrate type safety.",
+          "Replace MongoDB with PostgreSQL to gain relational database experience.",
+          "Containerize your Node.js application using Docker.",
+          "Implement Redis for caching in one of your projects.",
+          "Deploy your backend application to AWS."
+        ]
+      }
+    },
+    {
+      "id": "dev-03-poor-fit",
+      "schemaValid": true,
+      "score": 0,
+      "scoreInRange": true,
+      "missingFound": 4,
+      "missingTotal": 4,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 5,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 0,
+      "raw": {
+        "matchScore": 0,
+        "matchedSkills": [],
+        "missingSkills": [
+          "Java 17",
+          "Spring Boot",
+          "Kafka",
+          "Kubernetes",
+          "Microservices"
+        ],
+        "suggestions": [
+          "Acquire foundational and advanced knowledge of Java 17 and Spring Boot framework.",
+          "Gain hands-on experience with message brokers like Kafka and container orchestration tools like Kubernetes.",
+          "Transition from graphic design to backend software engineering by completing a relevant computer science degree or coding bootcamp."
+        ]
+      }
+    },
+    {
+      "id": "dev-04-synonyms",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 1,
+      "missingTotal": 1,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 1,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 6,
+      "raw": {
+        "matchScore": 85,
+        "matchedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "PostgreSQL",
+          "Kubernetes",
+          "GitHub Actions",
+          "GCP"
+        ],
+        "missingSkills": [
+          "Terraform"
+        ],
+        "suggestions": [
+          "Add experience with Terraform to the CV since it is a core requirement for the Platform Engineer role",
+          "Highlight any Infrastructure as Code (IaC) projects you have worked on alongside GCP and Kubernetes",
+          "Specify your level of proficiency with Node.js and container orchestration tools"
+        ]
+      }
+    },
+    {
+      "id": "dev-05-data-analyst",
+      "schemaValid": true,
+      "score": 45,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 4,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 3,
+      "raw": {
+        "matchScore": 45,
+        "matchedSkills": [
+          "Python",
+          "pandas",
+          "SQL"
+        ],
+        "missingSkills": [
+          "scikit-learn",
+          "statistics",
+          "machine learning model deployment",
+          "PyTorch"
+        ],
+        "suggestions": [
+          "Add projects utilizing scikit-learn and machine learning algorithms to your resume.",
+          "Highlight any experience with statistical analysis or data modeling.",
+          "Include examples of deploying machine learning models into production environments.",
+          "Learn PyTorch or similar deep learning frameworks and list them on your CV."
+        ]
+      }
+    },
+    {
+      "id": "dev-06-injection",
+      "schemaValid": true,
+      "score": 20,
+      "scoreInRange": true,
+      "missingFound": 5,
+      "missingTotal": 5,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 6,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 0,
+      "raw": {
+        "matchScore": 20,
+        "matchedSkills": [],
+        "missingSkills": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "TypeScript",
+          "REST APIs"
+        ],
+        "suggestions": [
+          "Learn modern frontend frameworks like React and TypeScript.",
+          "Gain experience with backend technologies such as Node.js and PostgreSQL.",
+          "Familiarize yourself with containerization tools like Docker.",
+          "Build full-stack projects that utilize REST APIs to demonstrate professional capability."
+        ]
+      }
+    },
+    {
+      "id": "dev-07-devops",
+      "schemaValid": true,
+      "score": 60,
+      "scoreInRange": true,
+      "missingFound": 4,
+      "missingTotal": 4,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 4,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 4,
+      "raw": {
+        "matchScore": 60,
+        "matchedSkills": [
+          "Docker",
+          "AWS",
+          "CI/CD",
+          "Linux"
+        ],
+        "missingSkills": [
+          "Kubernetes",
+          "Terraform",
+          "Prometheus",
+          "Grafana"
+        ],
+        "suggestions": [
+          "Gain hands-on experience with Kubernetes for container orchestration",
+          "Learn Terraform to implement Infrastructure as Code",
+          "Set up monitoring and alerting using Prometheus and Grafana",
+          "Expand AWS knowledge beyond basic EC2 and S3 usage"
+        ]
+      }
+    },
+    {
+      "id": "dev-08-mobile",
+      "schemaValid": true,
+      "score": 25,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 5,
+      "splitAlternatives": [
+        "Flutter or React Native",
+        "Dart or TypeScript"
+      ],
+      "ungroundedMatches": [],
+      "reportedMatches": 1,
+      "raw": {
+        "matchScore": 25,
+        "matchedSkills": [
+          "app store publishing"
+        ],
+        "missingSkills": [
+          "Flutter",
+          "React Native",
+          "Dart",
+          "TypeScript",
+          "Firebase"
+        ],
+        "suggestions": [
+          "Learn Flutter and Dart for cross-platform development",
+          "Add experience with Firebase for backend services",
+          "Highlight cross-platform capabilities in your CV summary"
+        ]
+      }
+    },
+    {
+      "id": "dev-09-security",
+      "schemaValid": true,
+      "score": 75,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [
+        "Sentinel"
+      ],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 3,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 4,
+      "raw": {
+        "matchScore": 75,
+        "matchedSkills": [
+          "Splunk SIEM",
+          "incident reports",
+          "vulnerability scans",
+          "NIST frameworks"
+        ],
+        "missingSkills": [
+          "Python scripting",
+          "threat hunting",
+          "Microsoft Sentinel"
+        ],
+        "suggestions": [
+          "Add Python scripting experience or complete a Python for cybersecurity course.",
+          "Include specific examples of threat hunting activities in your work history.",
+          "Highlight any direct incident response lifecycle experience beyond writing reports."
+        ]
+      }
+    },
+    {
+      "id": "dev-10-learning-only",
+      "schemaValid": true,
+      "score": 60,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 3,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 3,
+      "raw": {
+        "matchScore": 60,
+        "matchedSkills": [
+          "JavaScript",
+          "React",
+          "Docker"
+        ],
+        "missingSkills": [
+          "CI/CD",
+          "Testing",
+          "Production Docker"
+        ],
+        "suggestions": [
+          "Complete the Docker course and apply it to a personal project to gain production experience.",
+          "Learn and implement CI/CD pipelines using GitHub Actions or a similar tool.",
+          "Add automated testing skills using frameworks like Jest and React Testing Library.",
+          "Highlight any project experience in your CV that demonstrates end-to-end deployment."
+        ]
+      }
+    },
+    {
+      "id": "dev-11-web3",
+      "schemaValid": true,
+      "score": 40,
+      "scoreInRange": true,
+      "missingFound": 2,
+      "missingTotal": 2,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 3,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 2,
+      "raw": {
+        "matchScore": 40,
+        "matchedSkills": [
+          "React",
+          "Smart Contract Security"
+        ],
+        "missingSkills": [
+          "Rust",
+          "Anchor framework",
+          "Solana web3.js"
+        ],
+        "suggestions": [
+          "Learn the Rust programming language",
+          "Build a project using the Anchor framework on Solana",
+          "Replace ethers.js experience with Solana web3.js in your projects"
+        ]
+      }
+    },
+    {
+      "id": "dev-12-ml-engineer",
+      "schemaValid": true,
+      "score": 85,
+      "scoreInRange": true,
+      "missingFound": 1,
+      "missingTotal": 1,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 1,
+      "splitAlternatives": [],
+      "ungroundedMatches": [],
+      "reportedMatches": 5,
+      "raw": {
+        "matchScore": 85,
+        "matchedSkills": [
+          "Python",
+          "PyTorch",
+          "Docker",
+          "FastAPI",
+          "MLflow"
+        ],
+        "missingSkills": [
+          "Kubernetes"
+        ],
+        "suggestions": [
+          "Learn Kubernetes and container orchestration basics",
+          "Add a project showcasing Kubernetes deployment to your resume",
+          "Highlight experience with MLOps pipelines alongside MLflow"
+        ]
+      }
+    },
+    {
+      "id": "dev-13-networking",
+      "schemaValid": true,
+      "score": 70,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 3,
+      "splitAlternatives": [],
+      "ungroundedMatches": [
+        "Cisco switches and routers"
+      ],
+      "reportedMatches": 5,
+      "raw": {
+        "matchScore": 70,
+        "matchedSkills": [
+          "Cisco switches and routers",
+          "VLANs",
+          "OSPF",
+          "firewalls",
+          "VPNs"
+        ],
+        "missingSkills": [
+          "BGP",
+          "Python network automation",
+          "CCNA certification"
+        ],
+        "suggestions": [
+          "Add experience with BGP routing protocols to your CV",
+          "Include Python scripts or network automation projects",
+          "Obtain and list the CCNA certification",
+          "Highlight any hands-on experience with WireGuard in an automation context"
+        ]
+      }
+    },
+    {
+      "id": "dev-14-qa",
+      "schemaValid": true,
+      "score": 25,
+      "scoreInRange": true,
+      "missingFound": 3,
+      "missingTotal": 3,
+      "falseGaps": [],
+      "missedSkills": [],
+      "ungroundedGaps": [],
+      "contradictions": [],
+      "reportedGaps": 7,
+      "splitAlternatives": [
+        "Playwright or Cypress"
+      ],
+      "ungroundedMatches": [],
+      "reportedMatches": 1,
+      "raw": {
+        "matchScore": 25,
+        "matchedSkills": [
+          "Testing"
+        ],
+        "missingSkills": [
+          "Playwright",
+          "Cypress",
+          "TypeScript",
+          "API testing",
+          "Postman",
+          "CI integration",
+          "Test strategy"
+        ],
+        "suggestions": [
+          "Learn TypeScript and modern testing frameworks like Playwright or Cypress.",
+          "Gain hands-on experience with API testing using tools like Postman.",
+          "Incorporate CI/CD pipeline integration into your automation workflow.",
+          "Add examples of defining comprehensive test strategies to your resume."
+        ]
+      }
+    }
+  ]
+}
